@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — The Shop</title>
+    <meta name="description" content="Mock checkout page." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+      </div>
+    </header>
+
+    <main class="container checkout-page">
+      <h1>Checkout</h1>
+      <div class="checkout-panel">
+        <form id="checkout-form">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Address
+            <input type="text" name="address" required>
+          </label>
+          <label>PayPal Address
+            <input type="email" name="paypal" placeholder="your-paypal@email.com" required>
+          </label>
+          <p class="muted">To complete your purchase, please send payment directly to our PayPal account: <b>Cindybill99@email.com</b>. Include your name and order details in the payment note.</p>
+          <button class="btn btn-primary" type="submit">Place Order</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

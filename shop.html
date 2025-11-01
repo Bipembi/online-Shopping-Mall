@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop — The Shop</title>
+    <meta name="description" content="Browse products — The Shop demo." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="shop-head">
+        <h1>Shop</h1>
+        <div class="filters">
+          <select id="filter-category"><option value="all">All Categories</option></select>
+          <select id="filter-sort"><option value="popular">Recommended</option><option value="price-asc">Price: Low &uarr;</option><option value="price-desc">Price: High &darr;</option></select>
+          <input id="filter-price" type="range" min="0" max="500" value="500">
+        </div>
+      </div>
+
+      <div id="products-grid" class="cards grid">
+        <!-- products populated by JS -->
+      </div>
+    </main>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

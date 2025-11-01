@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Shop — Modern Online Retail</title>
+    <meta name="description" content="The Shop — modern, responsive retail demo. Fashion, Electronics, Home, Beauty. Ready for GitHub Pages." />
+    <meta property="og:title" content="The Shop — Modern Online Retail" />
+    <meta property="og:description" content="A premium-looking, responsive demo store ready to host on GitHub Pages." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay">
+          <div class="container hero-content">
+            <h1 class="hero-title">Shop the Best Deals Today</h1>
+            <p class="hero-sub">Curated picks across Fashion, Electronics, Home, and Beauty — delivered with style.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="shop.html">Start Shopping</a>
+              <a class="btn btn-outline" href="#featured">Featured</a>
+            </div>
+          </div>
+        </div>
+  <img class="hero-image" src="shopping-scene_2.jpg" alt="Lifestyle shopping scene">
+      </section>
+
+      <section id="featured" class="container categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="cards">
+          <a class="card" href="shop.html?category=Fashion">
+            <img src="fashion.webp" alt="Fashion">
+            <div class="card-body"><h3>Fashion</h3></div>
+          </a>
+          <a class="card" href="shop.html?category=Electronics">
+            <img src="electronics.jpeg" alt="Electronics">
+            <div class="card-body"><h3>Electronics</h3></div>
+          </a>
+          <a class="card" href="shop.html?category=Home">
+            <img src="home essentials.jpg" alt="Home Essentials">
+            <div class="card-body"><h3>Home Essentials</h3></div>
+          </a>
+          <a class="card" href="shop.html?category=Beauty">
+            <img src="beauty.webp" alt="Beauty">
+            <div class="card-body"><h3>Beauty</h3></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="container best-sellers">
+        <h2 class="section-title">Best Sellers</h2>
+        <div class="carousel" id="bestseller-carousel">
+          <!-- JS will populate carousel -->
+        </div>
+      </section>
+
+      <section class="container offer">
+        <div class="offer-banner">
+          <div>
+            <h3>Seasonal Sale — Up to 40% off</h3>
+            <p>Hurry! Offer ends in <span id="countdown">00:00:00</span></p>
+          </div>
+          <a href="shop.html" class="btn btn-primary">Shop Offers</a>
+        </div>
+      </section>
+
+      <section class="container testimonials">
+        <h2 class="section-title">What customers say</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">“Amazing selection and fast delivery. The quality exceeded expectations.” <cite>- Alex</cite></blockquote>
+          <blockquote class="testimonial">“The site looks premium and shopping was so easy.” <cite>- Priya</cite></blockquote>
+          <blockquote class="testimonial">“Great deals and excellent customer support.” <cite>- Marco</cite></blockquote>
+        </div>
+      </section>
+    </main>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="index.html">The<span class="accent">Shop</span></a>
+          <p class="muted">Premium storefront </p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
