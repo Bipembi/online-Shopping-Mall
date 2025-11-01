@@ -16,7 +16,26 @@
 
   // UI updates
   function updateCartCount(){ const count = Object.values(getCart()).reduce((s,n)=>s+n,0); document.querySelectorAll('#cart-count').forEach(e=>e.textContent = count); }
+   // Mobile menu
+  function setupMobileMenu() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav-links');
+    
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
 
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !menuBtn.contains(e.target) && nav.classList.contains('active')) {
+          menuBtn.classList.remove('active');
+          nav.classList.remove('active');
+        }
+      });
+    }
+  }
   // Utility: query param
   function qp(name){ const url=new URL(location.href); return url.searchParams.get(name); }
 
@@ -135,3 +154,4 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init); else init();
 
 })();
+
